@@ -1,13 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="I=edge">
     <title>Responsive Navbar and Tagline</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <style>
  
     </style>
@@ -15,34 +17,39 @@
 <body>
     <div class="navbar">
         <div class="brand">Earnist</div>
-        <div class="toggle">&#9776;</div>
-        <ul>
+        <div class="toggle" id="navbarToggle">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
+        <ul id="navbarMenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Signup</a></li>
+            <li><a href="#">Sign Up</a></li>
         </ul>
     </div>
-    <br><br>
+</div>
+   
+<div class="clear30"></div>
     <div class="tagline">
        <h2> Unlock Your<br>
         Earning Potential<br>
         with Drop Servicing</h2>
-    </div>
-    
+        <div class="clear10"></div>
     <div class="description">
         <p>Discover the Secrets to Effortless Income. Our Drop Servicing<br> Platform Guides You Every Step of the Way. Earn Passive Profits by<br> Leveraging Your Skills and Our Innovative Solutions.</p>
+        <div class="clear10"></div>
         <div class="buttons">
             <button class="start-earning">Start Earning</button>
             <button class="join-now">Join Now</button>
         </div>
     </div>
+    </div>
 
     <div class="container">
         <div class="left-section">   
             
-                <img src="i1.png" alt="">
+                <img src="./public/i1.png" alt="">
      
         </div>
         <div class="center-section">
@@ -53,7 +60,7 @@
     </p>
         </div>
         <div class="right-section">
-            <img src="image.png" alt="Dashboard Mockup">
+            <img src="./Public/image.png" alt="Dashboard Mockup">
         </div>
     </div>
 
@@ -66,13 +73,14 @@
             <li><a href="#">Apple</a></li>
         </ul>
     </div>
-    
+  
 <div class="unlock">
     <p>Earn More with  Drop Servicing</p>
     <h1>Unlock Passive Income with Drop Servicing</h1>
     <p>Maximize Your Earning Potential by Leveraging Our Innovative Drop Servicing Platform. Discover How to Turn Your Skills into a Lucrative Income Stream and Achieve Financial Independence. Whether You're a Freelancer, Small Business Owner, or Aspiring Entrepreneur</p>
  
-</div>
+
+
 <div class="names-row">
     <div class="name-item">
       
@@ -128,7 +136,7 @@
         <p>Growth</p>
     </div>
 </div>
-
+</div>
 
 <div class="navbar2">
     <ul>
@@ -156,7 +164,7 @@
     <div class="card">
         <h2>Earn</h2>
       <p>Unlock Passive Income Opportunities with Drop Servicing. Our Innovative Platform Helps You Monetize Your Skills and Tap into the Lucrative Gig Economy</p>
-      <br><br>
+      <div class="clear10"></div>
     </div>
     <div class="card">
         <h2>Achieve Financial Freedom</h2>
@@ -173,7 +181,7 @@
     </div>
 </div>
 <footer class="footer">
-    <img src="C:\Users\Anjali\Desktop\design\img.png" alt="Logo">
+    <img src="./Public/img.png" alt="Logo">
     <p id="footer-p">&copy;2024 Earnists<br>
         All rights reserved</p>
     <div class="footer-column">
@@ -198,10 +206,12 @@
         <a href="#"><p>Instagram</p></a>
     </div>
 </footer>
-    <script>
+ <!-- <script>
         document.querySelector('.toggle').addEventListener('click', function() {
             document.querySelector('.navbar ul').classList.toggle('active');
         });
-    </script>
+    </script> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
